@@ -1,4 +1,4 @@
-import Mjc_Animation from '@/components/animation/mjc';
+import Mjc_Animation from '@/components/animation/leaf';
 
 export default function Home() {
   return (
