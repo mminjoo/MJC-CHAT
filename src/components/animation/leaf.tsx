@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three-stdlib';
 import { Canvas, useLoader } from '@react-three/fiber';
 
-const LEAVES_COUNT = 100;
+const LEAVES_COUNT = 150;
 const ANIMATION_SPEED = 3;
 
 function Leaf({ color }: { color: 'sky' | 'blue' }) {
