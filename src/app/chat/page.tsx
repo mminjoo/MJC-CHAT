@@ -45,8 +45,15 @@ export default function Chat() {
                         <img src="Settings.png" alt="" />
                     </div>
                 </div>
-                <div className={style.main_chat}>
-                    
+                <div className={style.main_screen}>
+                    <div className={style.main_chat}>
+                        <span>홍대 입구 정류장에서 명지전문대 까지 가는 노선번호를 알려줘</span>
+                    </div>
+                    <div className={style.main_msg}>
+                        <form>
+                            <input placeholder="메세지를 입력하세요"/>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
