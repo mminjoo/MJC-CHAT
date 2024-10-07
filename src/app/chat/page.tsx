@@ -1,3 +1,5 @@
+import style from '@/styles/chat.module.css'
+
 export default function Chat() {
     return (
         <div className="container">
@@ -49,9 +51,9 @@ export default function Chat() {
                             <p>홍대 입구 정류장에서 명지전문대 까지 가는 노선번호를 알려줘</p>
                         </div>
                     </div>
-                    {/* <div className="conversation">
+                    <div className="conversation">
                         <input />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
