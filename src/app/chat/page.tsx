@@ -2,9 +2,9 @@ import style from '@/styles/chat.module.css'
 
 export default function Chat() {
     return (
-        <div className="container">
-            <div className="left">
-                <div className="menu">
+        <div className={style.container}>
+            <div className={style.menu}>
+                <div className={style.menu_header}>
                     <div>
                         <img src='Chat-minimum.png' alt="" />
                     </div>
@@ -12,7 +12,7 @@ export default function Chat() {
                         <img src='new_chat.png' alt="" />
                     </div>
                 </div>
-                <div className="chat-list">
+                <div className={style.menu_chatlist}>
                     <div>
                         <span>우리 학교의 설립목적이 뭐야?</span>
                         <img src="Vector.png" alt='' />
@@ -39,21 +39,14 @@ export default function Chat() {
                     </div>
                 </div>
             </div>
-            <div className="chat-screen">
-                <div className="chat-top">
+            <div className={style.main}>
+                <div className={style.main_header}>
                     <div>
                         <img src="Settings.png" alt="" />
                     </div>
                 </div>
-                <div>
-                    <div className="chat">
-                        <div>
-                            <p>홍대 입구 정류장에서 명지전문대 까지 가는 노선번호를 알려줘</p>
-                        </div>
-                    </div>
-                    <div className="conversation">
-                        <input />
-                    </div>
+                <div className={style.main_chat}>
+                    
                 </div>
             </div>
         </div>
