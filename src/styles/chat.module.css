@@ -31,10 +31,6 @@
     font-size: 14px;
 }
 
-.chat_list img {
-    margin-top: 3px;
-}
-
 .chat_container {
     width: calc(100% - 260px);
     height: 100%;
@@ -50,11 +46,15 @@
 
 .chat_screen {
     width: 100%;
+    height: 100%;
+    height: calc(100% - 70px);
 }
 
 .chatting {
     max-width: 768px;
+    height: calc(100% - 60px);
     margin: auto;
+    overflow: scroll;
 }
 
 .paragraph {
