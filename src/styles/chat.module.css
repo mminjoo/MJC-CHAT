@@ -51,22 +51,22 @@
 }
 
 .chatting {
-    max-width: 768px;
-    height: calc(100% - 60px);
+    width: 100%;
+    height: calc(100% - 80px);
     margin: auto;
     overflow: scroll;
 }
 
 .paragraph {
+    max-width: 768px;
     display: flex;
     align-items: start;
-    margin-bottom: 50px;
+    margin: 0px auto 50px auto;
 }
 
 .paragraph img {
     width: 36px;
     height: 36px;
-    margin-top: 6px;
     margin-right: 30px;
 }
 
@@ -100,6 +100,7 @@
     border: none;
     outline: none;
     background-color: #f4f4f4;
+    font-size: 18px;
 }
 
 .send_msg img {
