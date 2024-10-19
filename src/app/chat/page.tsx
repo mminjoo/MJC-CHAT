@@ -2,7 +2,18 @@ import style from '@/styles/chat.module.css'
 import Conversation from '@/components/conversation'
 import Chatroom from '@/components/chatroom'
 
-export default function Chat() {
+import prisma from '@/../prisma/client';
+
+export default async function Chat() {
+    const chatRooms = await prisma.chatRoom.findMany({
+        where: {
+            userId: 1
+        },
+        orderBy: {
+            createdAt: 'asc'
+        }
+    });
+
     return (
         <div className={style.container}>
             <div className={style.menu_container}>
@@ -11,11 +22,9 @@ export default function Chat() {
                     <img src='new_chat.png' alt='' className='new' />
                 </div>
                 <div className={style.menu_chat}>
-                    <Chatroom title='우리 학교의 설립목적이 뭐야?'></Chatroom>
-                    <Chatroom title='우리 학교의 설립목적이 뭐야?'></Chatroom>
-                    <Chatroom title='우리 학교의 설립목적이 뭐야?'></Chatroom>
-                    <Chatroom title='우리 학교의 설립목적이 뭐야?'></Chatroom>
-                    <Chatroom title='우리 학교의 설립목적이 뭐야?'></Chatroom>
+                    {chatRooms.map((chatRoom) => (
+                        <Chatroom title={chatRoom.title}></Chatroom>
+                    ))}
                 </div>
             </div>
             <div className={style.chat_container}>
